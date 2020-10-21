@@ -91,6 +91,10 @@ cohorts?}
 
 \item{runTemporalCohortCharacterization}{Generate and export the temporal cohort characterization?}
 
+\item{incremental}{Do you want to run this in incremental mode.}
+
+\item{incrementalFolder}{Location to store incremental files}
+
 \item{minCellCount}{The minimum number of subjects contributing to a count
 before it can be included in packaged results.}
 }

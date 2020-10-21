@@ -61,6 +61,8 @@
 #' @param runTemporalCohortCharacterization   Generate and export the temporal cohort characterization?
 #' @param minCellCount                        The minimum number of subjects contributing to a count
 #'                                            before it can be included in packaged results.
+#' @param incremental                         Do you want to run this in incremental mode.
+#' @param incrementalFolder                   Location to store incremental files
 #'
 #' @export
 runCohortDiagnostics <- function(packageName = "examplePackage",
