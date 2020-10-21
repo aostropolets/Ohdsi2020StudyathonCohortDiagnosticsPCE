@@ -8,7 +8,7 @@ Description: A R package, to be used to capture the cohorts being diagnosed as p
 Depends:
     DatabaseConnector (>= 2.2.0)
 Imports:
-	CohortDiagnostics
+	CohortDiagnostics (>= 2.0.0)
 Suggests:
     knitr,
     rmarkdown,
