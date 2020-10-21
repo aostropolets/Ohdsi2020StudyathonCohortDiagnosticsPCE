@@ -15,7 +15,7 @@
 
 # Load the package
 library(Ohdsi2020StudyathonCohortDiagnosticsPCE)
-
+package <- "Ohdsi2020StudyathonCohortDiagnosticsPCE"
 path <- "s:/results"
 
 # Optional: specify where the temporary files will be created:
@@ -65,6 +65,7 @@ Ohdsi2020StudyathonCohortDiagnosticsPCE::runCohortDiagnostics(connectionDetails 
                                                               runCohortOverlap = TRUE,
                                                               runCohortCharacterization = TRUE,
                                                               runTemporalCohortCharacterization = TRUE,
+                                                              packageName = package,
                                                               minCellCount = 5)
 
 # To view the results: Optional: if there are results zip files from multiple sites in a folder, this
