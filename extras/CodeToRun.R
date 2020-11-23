@@ -10,12 +10,12 @@
 # install.packages("devtools")
 # devtools::install_github("OHDSI/FeatureExtraction")
 # devtools::install_github("OHDSI/ROhdsiWebApi")
-# devtools::install_github("OHDSI/CohortDiagnostics")
+# devtools::install_github("aostropolets/CohortDiagnostics")
 
 
 # Load the package
-library(Ohdsi2020StudyathonCohortDiagnosticsPCE)
-package <- "Ohdsi2020StudyathonCohortDiagnosticsPCE"
+library(IncidenceRates)
+package <- "IncidenceRates"
 path <- "s:/results"
 
 # Optional: specify where the temporary files will be created:
@@ -46,7 +46,7 @@ databaseDescription <- "IBM MarketScan® Commercial Claims and Encounters Databa
 
 # Use this to run the cohorttDiagnostics. The results will be stored in the diagnosticsExport
 # subfolder of the outputFolder. This can be shared between sites.
-Ohdsi2020StudyathonCohortDiagnosticsPCE::runCohortDiagnostics(connectionDetails = connectionDetails,
+IncidenceRates::runCohortDiagnostics(connectionDetails = connectionDetails,
                                                               cdmDatabaseSchema = cdmDatabaseSchema,
                                                               cohortDatabaseSchema = cohortDatabaseSchema,
                                                               cohortTable = cohortTable,

@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-packageName <- "Ohdsi2020StudyathonCohortDiagnosticsPCE"
+packageName <- "IncidenceRates"
 
 # Format and check code ---------------------------------------------------
 # OhdsiRTools::formatRFolder()
@@ -25,13 +25,13 @@ packageName <- "Ohdsi2020StudyathonCohortDiagnosticsPCE"
 # shell("rm extras/Ohdsi2020StudyathonCohortDiagnostics.pdf")
 # shell("R CMD Rd2pdf ./ --output=extras/Ohdsi2020StudyathonCohortDiagnostics.pdf")
 
-baseUrl <- "http://Ohdsicovid19us.us-east-1.elasticbeanstalk.com/WebAPI/"
+baseUrl <- ""
 library(magrittr)
 
 allCohorts <- ROhdsiWebApi::getCohortDefinitionsMetaData(baseUrl = baseUrl)
 
 cohortsInOhdsi2020StudyAthonDescription <- allCohorts %>% 
-  dplyr::filter(id %in% c(1325, 1322, 1326, 1328,  1354, 1357, 1295, 1286, 1358, 1359, 1360, 1361)) %>%
+  dplyr::filter(id %in% c(1325, 1322, 1326, 1328,  1354, 1357, 1295, 1286, 1358, 1359, 1360, 1361 xxx)) %>%
   dplyr::select(.data$id, .data$name, .data$description) %>% dplyr::mutate(phenotypeId = 0,
                                                                            webApiCohortId = id,
                                                                            atlasId = id,
